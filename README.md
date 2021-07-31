@@ -12,7 +12,7 @@
   ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
   ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)
   ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=flat&logo=Bootstrap&logoColor=563D7C)
-  ![MaterialUI](https://img.shields.io/badge/-Material%20UI-333333?style=flat&logo=material-ui&logo)
+  ![MaterialUI](https://img.shields.io/badge/-Material%20UI-333333?style=flat&logo=material-ui&logoColor=1572B6)
   ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
   ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
 - 🛢 &nbsp;
