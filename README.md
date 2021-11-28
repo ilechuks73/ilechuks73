@@ -23,5 +23,6 @@
   ![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=markdown)
 - 🔧 &nbsp;
   ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC)
-
+- 🕹️ &nbsp;
+  ![Arduino](https://img.shields.io/badge/-Arduino-333333?style=flat&logo=Arduino&logoColor=007ACC)
 <br/>
