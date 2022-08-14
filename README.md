@@ -1,8 +1,12 @@
 <h2> Hey there! I'm Ilechukwu Joshua Chukwudalu.</h2>
 
-<h3> 👨🏻‍💻 &nbsp;About Me </h3>
+<h3> About Me </h3>
 
-- 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
+- Exploring new technologies and developing software solutions and quick hacks.
+- IT support Technician
+- Fullstack Web Developer (MERN)
+- Embedded hardware systems Enthausiast
+
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
