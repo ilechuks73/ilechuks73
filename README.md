@@ -5,7 +5,7 @@
 - Exploring new technologies and developing software solutions and quick hacks.
 - IT support Technician
 - Fullstack Web Developer (MERN)
-- Embedded hardware systems Enthausiast
+- Embedded hardware systems Enthusiast
 
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
