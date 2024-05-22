@@ -1,22 +1,22 @@
 import Head from "next/head";
 
-export default function Home() {
+import { TopSection, Contact } from "@/components/root";
+
+export default function Root() {
   return (
     <>
       <Head>
         <title>Ilechukwu Joshua</title>
 
-        <meta
-          name="description"
-          content="Software Engineer"
-        />
+        <meta name="description" content="Software Engineer" />
         {/*<script*/}
         {/*  src="https://apis.google.com/js/platform.js"*/}
         {/*  async*/}
         {/*  defer*/}
         {/*></script>*/}
       </Head>
-        <p>THIS IS MY PORTFOLIO SITE</p>
+      <TopSection />
+      <Contact />
     </>
   );
 }

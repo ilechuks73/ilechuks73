@@ -5,9 +5,7 @@ function Offline() {
     <>
       <Head>
         <title>You are offline</title>
-
       </Head>
-
     </>
   );
 }
