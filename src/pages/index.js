@@ -16,6 +16,7 @@ export default function Home() {
         {/*  defer*/}
         {/*></script>*/}
       </Head>
+        <p>THIS IS MY PORTFOLIO SITE</p>
     </>
   );
 }
