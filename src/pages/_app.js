@@ -3,7 +3,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { GlobalComponentsProvider } from "@/states/globalComponents";
 import { WebsocketProvider } from "@/states/websocket";
 import Script from "next/script";
-import "react-toastify/dist/ReactToastify.css";
 
 const theme = createTheme({
   components: {
