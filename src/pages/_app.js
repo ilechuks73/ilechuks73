@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
       {/*<Script*/}
       {/*  async*/}
       {/*  src="https://www.googletagmanager.com/gtag/js?id=G-7EMKTRW285"*/}
-      {/*></Script>*/}
+      {/*/>*/}
       {/*<Script*/}
       {/*  id="google-analytics"*/}
       {/*  strategy="afterInteractive"*/}
