@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Button as MuiButton } from "@mui/material";
+import { MdOutlineWavingHand } from "react-icons/md";
+
 export default function TopSection() {
   return (
     <div className={"bg-[#000000] text-white"}>
-      <div
-        className={"font-roboto max-w-[1000px] mx-4 md:mx-10 lg:mx-auto"}
-      >
-
+      <div className={"font-roboto max-w-[1000px] mx-4 md:mx-10 lg:mx-auto"}>
         <div className={"flex gap-x-6 w-full"}>
           <div className={"w-[100%] md:w-[60%] pb-10"}>
             <h1 className={"text-[30px] font-bold pt-20"}>Portfolio</h1>
@@ -44,15 +43,14 @@ export default function TopSection() {
             <div className={"mt-8"}>
               <MuiButton
                 variant={"contained"}
-                className={
-                  "!bg-white !text-black"
-                }
+                className={"!bg-white !text-black"}
+                endIcon={<MdOutlineWavingHand />}
               >
                 Reach Out
               </MuiButton>
             </div>
           </div>
-          <div className={"w-[100%] md:w-[40%]"}>
+          <div className={"w-[100%] md:w-[40%] hidden md:block"}>
             <img
               alt={"joshua ilechukwu"}
               className={"w-[100%] h-[100%] object-cover object-center filter"}
