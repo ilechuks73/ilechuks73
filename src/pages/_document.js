@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" className={"dark:bg-[#000000] dark:text-white"}>
+    <Html lang="en" className={""}>
       <Head>
         {/*<link*/}
         {/*  rel="shortcut icon"*/}
