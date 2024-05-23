@@ -25,7 +25,7 @@ export default function Skills() {
               <MuiButton
                 color="primary"
                 className={
-                  "!w-full !border !border-solid !border-black !text-black"
+                  "!w-full !border !border-solid !border-black !text-black dark:!border-white dark:!text-white"
                 }
               >
                 {item}

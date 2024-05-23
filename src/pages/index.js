@@ -15,8 +15,9 @@ export default function Root() {
         {/*  defer*/}
         {/*></script>*/}
       </Head>
+
       <TopSection />
-        <Skills />
+      <Skills />
       <Contact />
       <div className={"h-[300px] w-full bg-none"}></div>
     </>
