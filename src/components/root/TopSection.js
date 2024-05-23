@@ -2,7 +2,7 @@
 import { Button as MuiButton } from "@mui/material";
 export default function TopSection() {
   return (
-    <div className={"font-roboto max-w-[1500px] mx-4 md:mx-10 mt-20 xl:mx-auto"}>
+    <div className={"font-roboto max-w-[1000px] mx-4 md:mx-10 mt-20 lg:mx-auto"}>
       <h1 className={"text-[30px] font-bold"}>Portfolio</h1>
       <div className={"mt-10 flex w-full"}>
         <div className={"w-[100%] md:w-[50%]"}>
