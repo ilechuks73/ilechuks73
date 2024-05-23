@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { TopSection, Contact } from "@/components/root";
+import { TopSection, Contact, Skills } from "@/components/root";
 
 export default function Root() {
   return (
@@ -16,6 +16,7 @@ export default function Root() {
         {/*></script>*/}
       </Head>
       <TopSection />
+        <Skills />
       <Contact />
       <div className={"h-[300px] w-full bg-none"}></div>
     </>
