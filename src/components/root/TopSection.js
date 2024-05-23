@@ -1,11 +1,14 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Button as MuiButton } from "@mui/material";
 export default function TopSection() {
   return (
-    <div className={"font-roboto max-w-[1500px] mx-10 mt-20 mx-auto"}>
+    <div className={"font-roboto max-w-[1500px] mx-10 mt-20 xl:mx-auto"}>
       <h1 className={"text-[30px] font-bold"}>Portfolio</h1>
       <div className={"mt-10 flex w-full"}>
         <div className={"w-[50%]"}>
-          <h1 className={"text-[20px] font-medium"}>Hi, I'm Joshua Ilechukwu</h1>
+          <h1 className={"text-[20px] font-medium"}>
+            Hi, I'm Joshua Ilechukwu
+          </h1>
           <p className={"text-[15px] text-gray-600 mt-2"}>
             Hi, I'm [Your Name], a passionate and dedicated software engineer
             with [X] years of experience in developing innovative solutions and
@@ -40,7 +43,10 @@ export default function TopSection() {
             don't hesitate to reach out!
           </p>
           <div className={"mt-8"}>
-            <MuiButton variant={"contained"} className={"!bg-black !text-white"}>
+            <MuiButton
+              variant={"contained"}
+              className={"!bg-black !text-white"}
+            >
               Reach Out
             </MuiButton>
           </div>
@@ -49,3 +55,4 @@ export default function TopSection() {
     </div>
   );
 }
+/* eslint-enable react/no-unescaped-entities */
