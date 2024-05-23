@@ -17,6 +17,7 @@ export default function Root() {
       </Head>
       <TopSection />
       <Contact />
+      <div className={"h-[300px] w-full bg-none"}></div>
     </>
   );
 }
