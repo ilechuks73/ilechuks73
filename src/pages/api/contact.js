@@ -15,7 +15,9 @@ export default async function handler(request, response) {
     return response.status(200).json({
       message: "Failed",
       error: true,
-      data: null,
+      data: {
+        errorCodes: response2.data.errorCodes,
+      },
     });
   }
 
