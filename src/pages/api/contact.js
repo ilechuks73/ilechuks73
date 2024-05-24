@@ -16,7 +16,7 @@ export default async function handler(request, response) {
       message: "Failed",
       error: true,
       data: {
-        errorCodes: response2.data.errorCodes,
+        errorCodes: response2.data,
       },
     });
   }
