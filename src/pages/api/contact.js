@@ -1,4 +1,12 @@
 const axios = require("axios");
+
+// Use bodyParser middleware to parse request bodies for this specific API route
+export const config = {
+  api: {
+    bodyParser: true,
+  },
+};
+
 export default async function handler(request, response) {
   const response2 = await axios.post(
     "https://www.google.com/recaptcha/api/siteverify",
