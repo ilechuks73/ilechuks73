@@ -1,13 +1,18 @@
 import Head from "next/head";
 
-import { TopSection, Contact, Skills, WorkExperience } from "@/components/root";
+import {
+  TopSection,
+  Contact,
+  Skills,
+  WorkExperience,
+  ViewSwitch,
+} from "@/components/root";
 
 export default function Root() {
   return (
     <>
       <Head>
         <title>Ilechukwu Joshua</title>
-
         <meta name="description" content="Software Engineer" />
         {/*<script*/}
         {/*  src="https://apis.google.com/js/platform.js"*/}
@@ -20,8 +25,8 @@ export default function Root() {
       <Skills />
       <WorkExperience />
       <Contact />
-
       <div className={"h-[300px] w-full bg-none"}></div>
+      <ViewSwitch />
     </>
   );
 }
