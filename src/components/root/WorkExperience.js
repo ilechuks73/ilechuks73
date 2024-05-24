@@ -8,23 +8,7 @@ import {
   StepConnector as MuiStepConnector,
   StepIcon as MuiStepIcon,
 } from "@mui/material";
-import { IoLogoJavascript } from "react-icons/io5";
-import { IoLogoNodejs, IoLogoGithub } from "react-icons/io5";
-import {
-  SiRabbitmq,
-  SiAmazonaws,
-  SiLinux,
-  SiReact,
-  SiVuedotjs,
-  SiNextdotjs,
-  SiNuxtdotjs,
-  SiMysql,
-  SiPostgresql,
-  SiRedis,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-} from "react-icons/si";
+
 export default function WorkExperience() {
   return (
     <div
