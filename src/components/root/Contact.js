@@ -59,10 +59,10 @@ export default function Contact() {
                 const token = await executeRecaptcha("form_submit");
                 fetch("/api/contact", {
                   method: "POST",
-                  body: {
+                  body: JSON.stringify({
                     ...form,
                     token,
-                  },
+                  }),
                 })
                   .then((response) => response.json())
                   .then((data) => console.log(data))
