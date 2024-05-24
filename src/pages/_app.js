@@ -2,6 +2,7 @@ import "@/styles/globals.scss";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { GlobalComponentsProvider } from "@/states/globalComponents";
 import { WebsocketProvider } from "@/states/websocket";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 import Script from "next/script";
 
 const theme = createTheme({
@@ -49,7 +50,9 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <WebsocketProvider>
           <GlobalComponentsProvider>
-            <Component {...pageProps} />
+            <ReCaptchaProvider reCaptchaKey="6LdDZucpAAAAALH6XAErX6kSTrGGAmgO3fmihtjB">
+              <Component {...pageProps} />
+            </ReCaptchaProvider>
           </GlobalComponentsProvider>
         </WebsocketProvider>
       </ThemeProvider>
