@@ -1,6 +1,5 @@
+const axios = require("axios");
 export default async function handler(request, response) {
-  const axios = require("axios");
-
   const response2 = await axios.post(
     "https://www.google.com/recaptcha/api/siteverify",
     null,
