@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { TopSection, Contact, Skills } from "@/components/root";
+import { TopSection, Contact, Skills, WorkExperience } from "@/components/root";
 
 export default function Root() {
   return (
@@ -18,7 +18,9 @@ export default function Root() {
 
       <TopSection />
       <Skills />
+      <WorkExperience />
       <Contact />
+
       <div className={"h-[300px] w-full bg-none"}></div>
     </>
   );
