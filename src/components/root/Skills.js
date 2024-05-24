@@ -1,4 +1,4 @@
-import { Button as MuiButton, TextField as MuiTextField } from "@mui/material";
+import { Button as MuiButton } from "@mui/material";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IoLogoNodejs, IoLogoGithub } from "react-icons/io5";
 import {
@@ -16,6 +16,7 @@ import {
   SiCss3,
   SiTailwindcss,
 } from "react-icons/si";
+
 export default function Skills() {
   return (
     <div
