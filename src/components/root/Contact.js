@@ -59,6 +59,9 @@ export default function Contact() {
                 const token = await executeRecaptcha("form_submit");
                 fetch("/api/contact", {
                   method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
                   body: JSON.stringify({
                     ...form,
                     token,
