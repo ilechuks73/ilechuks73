@@ -25,6 +25,7 @@ export default async function handler(request, response) {
       error: true,
       data: {
         errorCodes: response2.data,
+        body: request.body,
       },
     });
   }
