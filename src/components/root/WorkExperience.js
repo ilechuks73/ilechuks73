@@ -57,8 +57,8 @@ export default function WorkExperience() {
                 <MuiStepLabel
                   optional={
                     <Fragment>
-                      <p>{item.role}</p>
-                      <p>{item.startDate}</p>
+                      <p className={"text-black"}>{item.role}</p>
+                      <p className={"text-sm"}>{item.startDate}</p>
                     </Fragment>
                   }
                 >
