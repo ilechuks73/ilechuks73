@@ -2,13 +2,17 @@ import { Button as MuiButton, TextField as MuiTextField } from "@mui/material";
 import { PiPaperPlaneRightFill } from "react-icons/pi";
 import { useState } from "react";
 import { useReCaptcha } from "next-recaptcha-v3";
+import validator from "validator";
 
 export default function Contact() {
+  const [isLoading, setIsLoading] = useState([false]);
+  const [hasError, setHasError] = useState([false, false, false]);
   const [form, setForm] = useState({
     name: null,
     emailAddress: null,
     message: null,
   });
+
   const { executeRecaptcha } = useReCaptcha();
   return (
     <div
@@ -25,6 +29,7 @@ export default function Contact() {
         </div>
         <div className={"w-full md:w-[50%] xl:w-[30%]"}>
           <MuiTextField
+            error={hasError[0]}
             size={"small"}
             variant={"outlined"}
             className={"!w-full !mt-3"}
@@ -33,6 +38,7 @@ export default function Contact() {
             onChange={(e) => setForm({ ...form, name: e.target.value })}
           />
           <MuiTextField
+            error={hasError[1]}
             size={"small"}
             variant={"outlined"}
             className={"!w-full !mt-3"}
@@ -41,6 +47,7 @@ export default function Contact() {
             onChange={(e) => setForm({ ...form, emailAddress: e.target.value })}
           />
           <MuiTextField
+            error={hasError[2]}
             size={"small"}
             variant={"outlined"}
             className={"!w-full !mt-3"}
@@ -52,12 +59,57 @@ export default function Contact() {
           />
           <div className={"mt-3 w-full flex gap-x-2"}>
             <MuiButton
+              disabled={isLoading[0] === true}
               variant={"contained"}
               className={"!bg-black !text-white !w-full !flex-grow"}
               endIcon={<PiPaperPlaneRightFill />}
               onClick={async (event) => {
+                setHasError((hasError) => {
+                  hasError[0] = false;
+                  hasError[1] = false;
+                  hasError[2] = false;
+                  return [...hasError];
+                });
+                if (
+                  !form.name ||
+                  validator.isEmpty(form.name) === true ||
+                  validator.isAlpha(form.name) === false ||
+                  validator.isLength(form.name, { min: 2 }) === false
+                ) {
+                  setHasError((hasError) => {
+                    hasError[0] = true;
+                    return [...hasError];
+                  });
+                  return false;
+                }
+                if (
+                  !form.emailAddress ||
+                  validator.isEmpty(form.emailAddress) === true ||
+                  validator.isEmail(form.emailAddress) === false
+                ) {
+                  setHasError((hasError) => {
+                    hasError[1] = true;
+                    return [...hasError];
+                  });
+                  return false;
+                }
+                if (
+                  !form.message ||
+                  validator.isEmpty(form.message) === true ||
+                  validator.isLength(form.message, { min: 10 }) === false
+                ) {
+                  setHasError((hasError) => {
+                    hasError[2] = true;
+                    return [...hasError];
+                  });
+                  return false;
+                }
+                setIsLoading((isLoading) => {
+                  isLoading[0] = true;
+                  return [...isLoading];
+                });
                 const token = await executeRecaptcha("form_submit");
-                fetch("/api/contact", {
+                const response = await fetch("/api/contact", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -66,12 +118,18 @@ export default function Contact() {
                     ...form,
                     token,
                   }),
-                })
-                  .then((response) => response.json())
-                  .then((data) => console.log(data))
-                  .catch((error) =>
-                    console.error("Error fetching items:", error),
-                  );
+                });
+                if (response.status !== 200) {
+                  setIsLoading((isLoading) => {
+                    isLoading[0] = false;
+                    return [...isLoading];
+                  });
+                  return false;
+                }
+                setIsLoading((isLoading) => {
+                  isLoading[0] = false;
+                  return [...isLoading];
+                });
               }}
             >
               Send
