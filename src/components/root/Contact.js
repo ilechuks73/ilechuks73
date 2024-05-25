@@ -130,6 +130,11 @@ export default function Contact() {
                   isLoading[0] = false;
                   return [...isLoading];
                 });
+                setForm({
+                  name: null,
+                  emailAddress: null,
+                  message: null,
+                });
               }}
             >
               Send
