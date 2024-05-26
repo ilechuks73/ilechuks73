@@ -46,7 +46,7 @@ export default function TopSection() {
                 className={"!bg-white !text-black"}
                 endIcon={<MdOutlineWavingHand />}
               >
-                Reach Out
+                Say Hello
               </MuiButton>
             </div>
           </div>
