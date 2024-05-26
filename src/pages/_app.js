@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { GlobalComponentsProvider } from "@/states/globalComponents";
 import { WebsocketProvider } from "@/states/websocket";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
+import { SnackbarProvider  } from "notistack";
 import Script from "next/script";
 
 const theme = createTheme({
@@ -48,13 +49,19 @@ export default function App({ Component, pageProps }) {
       {/*/>*/}
 
       <ThemeProvider theme={theme}>
-        <WebsocketProvider>
-          <GlobalComponentsProvider>
-            <ReCaptchaProvider reCaptchaKey="6LdDZucpAAAAALH6XAErX6kSTrGGAmgO3fmihtjB">
-              <Component {...pageProps} />
-            </ReCaptchaProvider>
-          </GlobalComponentsProvider>
-        </WebsocketProvider>
+        <SnackbarProvider
+          maxSnack={10}
+          autoHideDuration={3000}
+          anchorOrigin={{ horizontal: "center", vertical: "top" }}
+        >
+          <WebsocketProvider>
+            <GlobalComponentsProvider>
+              <ReCaptchaProvider reCaptchaKey="6LdDZucpAAAAALH6XAErX6kSTrGGAmgO3fmihtjB">
+                <Component {...pageProps} />
+              </ReCaptchaProvider>
+            </GlobalComponentsProvider>
+          </WebsocketProvider>
+        </SnackbarProvider>
       </ThemeProvider>
     </>
   );

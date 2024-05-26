@@ -3,6 +3,7 @@ import { PiPaperPlaneRightFill } from "react-icons/pi";
 import { useState } from "react";
 import { useReCaptcha } from "next-recaptcha-v3";
 import validator from "validator";
+import { enqueueSnackbar } from "notistack";
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState([false]);
@@ -125,6 +126,9 @@ export default function Contact() {
                   });
                   return false;
                 }
+                enqueueSnackbar(
+                  "Hey, I got your message. I'll respond as soon as I can.",
+                );
                 setIsLoading((isLoading) => {
                   isLoading[0] = false;
                   return [...isLoading];

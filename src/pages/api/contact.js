@@ -46,7 +46,7 @@ export default async function handler(request, response) {
     Messages: [
       {
         From: {
-          Email: "ilechuks73@gmail.com",
+          Email: "hello@ilechuks73.com",
           Name: "ilechuks73",
         },
         To: [
