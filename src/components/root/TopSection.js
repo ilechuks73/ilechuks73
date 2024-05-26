@@ -1,11 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Button as MuiButton } from "@mui/material";
 import { MdOutlineWavingHand } from "react-icons/md";
+import { GoArrowUpRight } from "react-icons/go";
 
 export default function TopSection() {
   return (
     <div className={"bg-[#000000] text-white"}>
       <div className={"font-roboto max-w-[1000px] mx-4 md:mx-10 lg:mx-auto"}>
+        <div className={"flex justify-between items-center py-3"}>
+          <img
+            alt={"ilechuks73"}
+            className={"h-[30px] md:h-[50px]"}
+            src={
+              "https://res.cloudinary.com/geergregrgege/image/upload/v1716754335/assets/images/t8mthyoefh6bkgjzujj9.png"
+            }
+          />
+          <div className={"flex gap-x-2"}>
+            <MuiButton className={"!text-white"} disabled={true}>
+              {"Portfolio"}
+            </MuiButton>
+            <MuiButton endIcon={<GoArrowUpRight className={"font-light"}/>} className={"!text-white !font-light"}>
+              {"Blog"}
+            </MuiButton>
+          </div>
+        </div>
         <div className={"flex gap-x-6 w-full"}>
           <div className={"w-[100%] md:w-[60%] pb-10"}>
             <h1 className={"text-[30px] font-bold pt-20"}>Portfolio</h1>
