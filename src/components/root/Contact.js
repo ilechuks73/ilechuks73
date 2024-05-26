@@ -73,7 +73,6 @@ export default function Contact() {
                 if (
                   !form.name ||
                   validator.isEmpty(form.name) === true ||
-                  validator.isAlpha(form.name) === false ||
                   validator.isLength(form.name, { min: 2 }) === false
                 ) {
                   setHasError((hasError) => {
