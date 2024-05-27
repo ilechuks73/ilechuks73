@@ -21,7 +21,7 @@ export default function TopSection() {
             </MuiButton>
             <MuiButton
               endIcon={<GoArrowUpRight className={"font-light"} />}
-              className={"!text-black !font-light !rounded-none !border-l !border-l-black border-solid !font-poppins"}
+              className={"!text-black !font-light !rounded-none !border-l !border-l-black !border-solid !font-poppins"}
             >
               {"Blog"}
             </MuiButton>
