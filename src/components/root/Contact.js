@@ -21,7 +21,7 @@ export default function Contact() {
     >
       <div className={"mt-10 flex flex-wrap sm:flex-nowrap gap-2 w-full"}>
         <div className={"w-full md:w-[50%] xl:w-[70%]"}>
-          <h1 className={"text-[20px] font-medium"}>{"Let's Work Together"}</h1>
+          <h1 className={"text-[20px] font-medium"}>{"Leave me a message"}</h1>
           <p className={"text-[15px] text-gray-600 mt-2"}>
             {
               "Trust me, You can never go wrong working with me, I give everything my best."
