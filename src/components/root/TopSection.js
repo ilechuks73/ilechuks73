@@ -34,7 +34,7 @@ export default function TopSection() {
               I'm Joshua Ilechukwu
             </h1>
             <p className={"text-[16px] text-gray-600 mt-2"}>
-              I'm [Your Name], a passionate and dedicated software engineer with
+              I'm a passionate and dedicated software engineer with
               [X] years of experience in developing innovative solutions and
               creating seamless user experiences. I specialize in [your key
               areas of expertise, e.g., web development, mobile applications,
