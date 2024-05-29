@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { GlobalComponentsProvider } from "@/states/globalComponents";
 import { WebsocketProvider } from "@/states/websocket";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
-import { SnackbarProvider  } from "notistack";
+import { SnackbarProvider } from "notistack";
 import Script from "next/script";
 
 const theme = createTheme({

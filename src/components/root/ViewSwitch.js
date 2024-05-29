@@ -28,10 +28,14 @@ export default function ViewSwitch() {
     <div className={"fixed w-full block bottom-2 z-[999999999999]"}>
       <div className={"mx-auto w-min"}>
         <MuiButtonGroup className={""}>
-          <MuiButton className={"!bg-black !border-[0.5px] !text-white !border-white"}>
+          <MuiButton
+            className={"!bg-black !border-[0.5px] !text-white !border-white"}
+          >
             <BsImage />
           </MuiButton>
-          <MuiButton className={"!bg-black !border-[0.5px] !text-white !border-white"}>
+          <MuiButton
+            className={"!bg-black !border-[0.5px] !text-white !border-white"}
+          >
             <BsTextCenter />
           </MuiButton>
         </MuiButtonGroup>

@@ -6,6 +6,7 @@ import {
   Skills,
   WorkExperience,
   ViewSwitch,
+  Projects,
 } from "@/components/root";
 
 export default function Root() {
@@ -24,6 +25,7 @@ export default function Root() {
       <TopSection />
       <Skills />
       <WorkExperience />
+      <Projects />
       <Contact />
       <div className={"h-[300px] w-full bg-none"}></div>
       <ViewSwitch />

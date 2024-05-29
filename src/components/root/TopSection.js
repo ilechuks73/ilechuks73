@@ -21,7 +21,9 @@ export default function TopSection() {
             </MuiButton>
             <MuiButton
               endIcon={<GoArrowUpRight className={"font-light"} />}
-              className={"!text-black !font-light !rounded-none !border-l !border-l-black !border-solid !font-poppins"}
+              className={
+                "!text-black !font-light !rounded-none !border-l !border-l-black !border-solid !font-poppins"
+              }
             >
               {"Blog"}
             </MuiButton>
@@ -34,12 +36,12 @@ export default function TopSection() {
               I'm Joshua Ilechukwu
             </h1>
             <p className={"text-[16px] text-gray-600 mt-2"}>
-              I'm a passionate and dedicated software engineer with
-              [X] years of experience in developing innovative solutions and
-              creating seamless user experiences. I specialize in [your key
-              areas of expertise, e.g., web development, mobile applications,
-              AI, etc.], and I'm proficient in [list of programming languages
-              and tools you excel at].
+              I'm a passionate and dedicated software engineer with [X] years of
+              experience in developing innovative solutions and creating
+              seamless user experiences. I specialize in [your key areas of
+              expertise, e.g., web development, mobile applications, AI, etc.],
+              and I'm proficient in [list of programming languages and tools you
+              excel at].
             </p>
             <p className={"text-[16px] text-gray-600 mt-3"}>
               Throughout my career, I've had the opportunity to work on a

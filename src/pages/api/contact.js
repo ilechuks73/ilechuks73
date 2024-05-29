@@ -11,16 +11,16 @@ export const config = {
 };
 
 export default async function handler(request, response) {
-  if(process.env.NEXT_PUBLIC_ENVIRONMENT === 'production') {
+  if (process.env.NEXT_PUBLIC_ENVIRONMENT === "production") {
     const response2 = await axios.post(
-        "https://www.google.com/recaptcha/api/siteverify",
-        null,
-        {
-          params: {
-            secret: process.env.NEXT_PRIVATE_RECAPTCHA_SECRET_KEY,
-            response: request.body.token,
-          },
+      "https://www.google.com/recaptcha/api/siteverify",
+      null,
+      {
+        params: {
+          secret: process.env.NEXT_PRIVATE_RECAPTCHA_SECRET_KEY,
+          response: request.body.token,
         },
+      },
     );
 
     if (response2.data.success === false) {

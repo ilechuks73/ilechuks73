@@ -49,7 +49,7 @@ export default function WorkExperience() {
               company: "Park british school",
               startDate: "June, 2021",
               role: "Full-Stack Engineer",
-            }
+            },
           ].map((item, index) => {
             return (
               <MuiStep key={index}>
