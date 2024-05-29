@@ -33,8 +33,23 @@ export default function WorkExperience() {
             {
               company: "Zendwallet",
               startDate: "October, 2022",
-              role: "Lead Back-End Engineer, Cloud & Devops",
+              role: "Lead Back-End, Cloud & Devops Engineer",
             },
+            {
+              company: "Child-Prime school",
+              startDate: "July, 2022",
+              role: "Programming and Robotics Instructor",
+            },
+            {
+              company: "Corona secondary school",
+              startDate: "January, 2022",
+              role: "Programming Instructor",
+            },
+            {
+              company: "Park british school",
+              startDate: "June, 2021",
+              role: "Full-Stack Engineer",
+            }
           ].map((item, index) => {
             return (
               <MuiStep key={index}>
