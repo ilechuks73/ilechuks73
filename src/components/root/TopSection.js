@@ -2,6 +2,13 @@
 import { Button as MuiButton } from "@mui/material";
 import { MdOutlineWavingHand } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";
+import { BsTelephoneFill } from "react-icons/bs";
+import { BsMailbox } from "react-icons/bs";
+import { MdWhatsapp } from "react-icons/md";
+import { BsArrow90DegRight } from "react-icons/bs";
+import { MdFacebook } from "react-icons/md";
+import { BsTwitterX } from "react-icons/bs";
+import { BsCopy } from "react-icons/bs";
 
 export default function TopSection() {
   return (
@@ -29,9 +36,9 @@ export default function TopSection() {
             </MuiButton>
           </div>
         </div>
-        <div className={"flex gap-x-6 w-full"}>
-          <div className={"w-[100%] md:w-[60%] pb-10"}>
-            <h1 className={"text-[30px] font-bold pt-20"}>Portfolio</h1>
+        <div className={"flex gap-x-10 w-full"}>
+          <div className={"w-[100%] md:w-[60%] pb-10 pt-20"}>
+            <h1 className={"text-[30px] font-bold"}>Portfolio</h1>
             <h1 className={"text-[20px] mt-10  font-medium"}>
               I'm Joshua Ilechukwu
             </h1>
@@ -69,14 +76,34 @@ export default function TopSection() {
               </MuiButton>
             </div>
           </div>
-          <div className={"w-[100%] md:w-[40%] hidden md:block"}>
-            {/*<img*/}
-            {/*  alt={"joshua ilechukwu"}*/}
-            {/*  className={"w-[100%] h-[100%] object-cover object-center filter"}*/}
-            {/*  src={*/}
-            {/*    "https://res.cloudinary.com/geergregrgege/image/upload/v1716427815/assets/images/epdfpb3gswfsl1hd2zc3.jpg"*/}
-            {/*  }*/}
-            {/*/>*/}
+          <div className={"w-[100%] md:w-[40%] hidden md:block pt-20"}>
+            <div className="flex flex-col gap-4">
+              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+                <BsTelephoneFill />
+                <span className="font-light">+2348148799269</span>
+                <BsCopy />
+              </div>
+              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+                <BsMailbox />
+                <span className="font-light">ilechuks73@gmail.com</span>
+                <BsCopy />
+              </div>
+              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+                <MdWhatsapp />
+                <span className="font-light">Whatsapp</span>
+                <BsArrow90DegRight />
+              </div>
+              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+                <MdFacebook />
+                <span className="font-light">Facebook</span>
+                <BsArrow90DegRight />
+              </div>
+              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+                <BsTwitterX />
+                <span className="font-light">X</span>
+                <BsArrow90DegRight />
+              </div>
+            </div>
           </div>
         </div>
       </div>
