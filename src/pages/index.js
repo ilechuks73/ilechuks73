@@ -25,10 +25,10 @@ export default function Root() {
       <TopSection />
       <Skills />
       <WorkExperience />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
       <div className={"h-[300px] w-full bg-none"}></div>
-      <ViewSwitch />
+      {/* <ViewSwitch /> */}
     </>
   );
 }

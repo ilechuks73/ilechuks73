@@ -5,12 +5,13 @@ import { GoArrowUpRight } from "react-icons/go";
 import { BsTelephoneFill } from "react-icons/bs";
 import { BsMailbox } from "react-icons/bs";
 import { MdWhatsapp } from "react-icons/md";
-import { BsArrow90DegRight } from "react-icons/bs";
 import { MdFacebook } from "react-icons/md";
 import { BsTwitterX } from "react-icons/bs";
 import { BsCopy } from "react-icons/bs";
 import { SiDevrant } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
+import { BsLinkedin } from "react-icons/bs";
+import { enqueueSnackbar } from "notistack";
 
 export default function TopSection() {
   return (
@@ -33,6 +34,11 @@ export default function TopSection() {
               className={
                 "!text-black !font-light !rounded-none !border-l !border-l-black !border-solid !font-poppins"
               }
+              onClick={() => {
+                enqueueSnackbar(
+                  "The blog is currently undergoing construction, Bear with me"
+                );
+              }}
             >
               {"Blog"}
             </MuiButton>
