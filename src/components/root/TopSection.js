@@ -9,6 +9,8 @@ import { BsArrow90DegRight } from "react-icons/bs";
 import { MdFacebook } from "react-icons/md";
 import { BsTwitterX } from "react-icons/bs";
 import { BsCopy } from "react-icons/bs";
+import { SiDevrant } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 
 export default function TopSection() {
   return (
@@ -78,30 +80,40 @@ export default function TopSection() {
           </div>
           <div className={"w-[100%] md:w-[40%] hidden md:block pt-20"}>
             <div className="flex flex-col gap-4">
-              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
                 <BsTelephoneFill />
                 <span className="font-light">+2348148799269</span>
-                <BsCopy />
+                <BsCopy className={"font-light"} />
               </div>
-              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
                 <BsMailbox />
                 <span className="font-light">ilechuks73@gmail.com</span>
-                <BsCopy />
+                <BsCopy className={"font-light"} />
               </div>
-              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
                 <MdWhatsapp />
                 <span className="font-light">Whatsapp</span>
-                <BsArrow90DegRight />
+                <GoArrowUpRight className={"font-light"} />
               </div>
-              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
                 <MdFacebook />
                 <span className="font-light">Facebook</span>
-                <BsArrow90DegRight />
+                <GoArrowUpRight className={"font-light"} />
               </div>
-              <div className="border rounded-md border-gray-400 p-4 flex items-center justify-between">
+              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
                 <BsTwitterX />
                 <span className="font-light">X</span>
-                <BsArrow90DegRight />
+                <GoArrowUpRight className={"font-light"} />
+              </div>
+              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
+                <SiDevrant />
+                <span className="font-light">Devrant</span>
+                <GoArrowUpRight className={"font-light"} />
+              </div>
+              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
+                <SiGithub />
+                <span className="font-light">Github</span>
+                <GoArrowUpRight className={"font-light"} />
               </div>
             </div>
           </div>
