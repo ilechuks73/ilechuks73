@@ -87,65 +87,65 @@ export default function TopSection() {
           </div>
           <div className={"w-[100%] md:w-[40%] hidden md:block pt-20"}>
             <div className="flex flex-col gap-4">
-              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
-                <BsTelephoneFill />
-                <span className="font-light">+2348148799269</span>
-                <BsCopy className={"font-light"} />
+              <div className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4">
+                <BsTelephoneFill className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">+2348148799269</span>
+                <BsCopy className={"text-gray-700"} />
               </div>
-              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
-                <MdOutlineMailOutline />
-                <span className="font-light">ilechuks73@gmail.com</span>
-                <BsCopy className={"font-light"} />
+              <div className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4">
+                <MdOutlineMailOutline className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">ilechuks73@gmail.com</span>
+                <BsCopy className={"text-gray-700"} />
               </div>
               <a
                 href="https://wa.me/2348148799269"
                 target="_blank"
-                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+                className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4"
               >
-                <MdWhatsapp />
-                <span className="font-light">Whatsapp</span>
-                <GoArrowUpRight className={"font-light"} />
+                <MdWhatsapp className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">Whatsapp</span>
+                <GoArrowUpRight className={"text-gray-700"} />
               </a>
-              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
-                <MdFacebook />
-                <span className="font-light">Facebook</span>
-                <GoArrowUpRight className={"font-light"} />
+              <div className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4">
+                <MdFacebook className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">Facebook</span>
+                <GoArrowUpRight className={"text-gray-700"} />
               </div>
               <a
                 href="https://x.com/Ilechuks73?t=6ke_pmQgbvxQQf5iTmyNmQ&s=09"
                 target="_blank"
-                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+                className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4"
               >
-                <BsTwitterX />
-                <span className="font-light">X</span>
-                <GoArrowUpRight className={"font-light"} />
+                <BsTwitterX className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">X</span>
+                <GoArrowUpRight className={"text-gray-700"} />
               </a>
               <a
                 href="https://devrant.com/users/ilechuks73"
                 target="_blank"
-                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+                className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4"
               >
-                <SiDevrant />
-                <span className="font-light">Devrant</span>
-                <GoArrowUpRight className={"font-light"} />
+                <SiDevrant className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">Devrant</span>
+                <GoArrowUpRight className={"text-gray-700"} />
               </a>
               <a
                 href="https://github.com/ilechuks73"
                 target="_blank"
-                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+                className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4"
               >
-                <SiGithub />
-                <span className="font-light">Github</span>
-                <GoArrowUpRight className={"font-light"} />
+                <SiGithub className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">Github</span>
+                <GoArrowUpRight className={"text-gray-700"} />
               </a>
               <a
                 href="https://www.linkedin.com/in/joshua-ilechukwu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
-                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+                className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4"
               >
-                <BsLinkedin />
-                <span className="font-light">LinkedIn</span>
-                <GoArrowUpRight className={"font-light"} />
+                <BsLinkedin className={"text-gray-600 text-lg"} />
+                <span className="text-gray-400">LinkedIn</span>
+                <GoArrowUpRight className={"text-gray-700"} />
               </a>
             </div>
           </div>
