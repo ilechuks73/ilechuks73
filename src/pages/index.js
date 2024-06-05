@@ -7,6 +7,7 @@ import {
   WorkExperience,
   ViewSwitch,
   Projects,
+  LatestFromMyBlog
 } from "@/components/root";
 
 export default function Root() {
@@ -26,6 +27,7 @@ export default function Root() {
       <Skills />
       <WorkExperience />
       {/* <Projects /> */}
+      <LatestFromMyBlog />
       <Contact />
       <div className={"h-[300px] w-full bg-none"}></div>
       {/* <ViewSwitch /> */}
