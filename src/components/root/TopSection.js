@@ -12,6 +12,7 @@ import { SiDevrant } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { enqueueSnackbar } from "notistack";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 export default function TopSection() {
   return (
@@ -92,35 +93,60 @@ export default function TopSection() {
                 <BsCopy className={"font-light"} />
               </div>
               <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
-                <BsMailbox />
+                <MdOutlineMailOutline />
                 <span className="font-light">ilechuks73@gmail.com</span>
                 <BsCopy className={"font-light"} />
               </div>
-              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
+              <a
+                href="https://wa.me/2348148799269"
+                target="_blank"
+                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+              >
                 <MdWhatsapp />
                 <span className="font-light">Whatsapp</span>
                 <GoArrowUpRight className={"font-light"} />
-              </div>
+              </a>
               <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
                 <MdFacebook />
                 <span className="font-light">Facebook</span>
                 <GoArrowUpRight className={"font-light"} />
               </div>
-              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
+              <a
+                href="https://x.com/Ilechuks73?t=6ke_pmQgbvxQQf5iTmyNmQ&s=09"
+                target="_blank"
+                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+              >
                 <BsTwitterX />
                 <span className="font-light">X</span>
                 <GoArrowUpRight className={"font-light"} />
-              </div>
-              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
+              </a>
+              <a
+                href="https://devrant.com/users/ilechuks73"
+                target="_blank"
+                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+              >
                 <SiDevrant />
                 <span className="font-light">Devrant</span>
                 <GoArrowUpRight className={"font-light"} />
-              </div>
-              <div className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between">
+              </a>
+              <a
+                href="https://github.com/ilechuks73"
+                target="_blank"
+                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+              >
                 <SiGithub />
                 <span className="font-light">Github</span>
                 <GoArrowUpRight className={"font-light"} />
-              </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/joshua-ilechukwu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                className="border rounded-md border-gray-400 px-4 py-2 flex items-center justify-between"
+              >
+                <BsLinkedin />
+                <span className="font-light">LinkedIn</span>
+                <GoArrowUpRight className={"font-light"} />
+              </a>
             </div>
           </div>
         </div>
