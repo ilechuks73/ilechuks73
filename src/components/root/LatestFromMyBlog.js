@@ -67,24 +67,33 @@ export default function LatestFromMyBlog() {
                       "mb-5 h-[200px] overflow-hidden flex border border-gray-300 flex-col justify-center"
                     }
                   >
-                    <Link href={`/posts/${item._id}`}>
+                    <a
+                      href={`https://blog.ilechuks73.com/posts/${item._id}`}
+                      target="_blank"
+                    >
                       <img
                         src={item.image}
                         alt={"ilechuks73"}
                         className="object-fill"
                       />
-                    </Link>
+                    </a>
                   </div>
                   <div className={"px-2 pb-5"}>
-                    <Link href={`/posts/${item._id}`}>
+                    <a
+                      href={`https://blog.ilechuks73.com/posts/${item._id}`}
+                      target="_blank"
+                    >
                       <p className={"text-md truncate hover:underline"}>
                         {item.title}
                       </p>
-                    </Link>
+                    </a>
                     <p className={"text-gray-500 text-sm"}>
                       {moment(item.createdAt).format("LL")}
                     </p>
-                    <Link href={`/posts/${item._id}`}>
+                    <a
+                      href={`https://blog.ilechuks73.com/posts/${item._id}`}
+                      target="_blank"
+                    >
                       <MuiButton
                         className={"!px-0 !text-black !hover:text-underline"}
                         disableRipple={true}
@@ -92,7 +101,7 @@ export default function LatestFromMyBlog() {
                       >
                         Read
                       </MuiButton>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               );
