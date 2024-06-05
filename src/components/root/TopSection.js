@@ -30,19 +30,16 @@ export default function TopSection() {
             <MuiButton className={"!text-black !font-poppins"} disabled={true}>
               {"Portfolio"}
             </MuiButton>
-            <MuiButton
-              endIcon={<GoArrowUpRight className={"font-light"} />}
-              className={
-                "!text-black !font-light !rounded-none !border-l !border-l-black !border-solid !font-poppins"
-              }
-              onClick={() => {
-                enqueueSnackbar(
-                  "The blog is currently undergoing construction, Bear with me"
-                );
-              }}
-            >
-              {"Blog"}
-            </MuiButton>
+            <a href="https://blog.ilechuks73.com" target="_blank">
+              <MuiButton
+                endIcon={<GoArrowUpRight className={"font-light"} />}
+                className={
+                  "!text-black !font-light !rounded-none !border-l !border-l-black !border-solid !font-poppins"
+                }
+              >
+                {"Blog"}
+              </MuiButton>
+            </a>
           </div>
         </div>
         <div className={"flex gap-x-10 w-full"}>
@@ -87,7 +84,7 @@ export default function TopSection() {
           </div>
           <div className={"w-[100%] md:w-[40%] hidden md:block pt-20"}>
             <div className="flex flex-col gap-4">
-              <div className="border rounded-md border-gray-200 px-4 py-4 flex items-center gap-x-4">
+              <div className="border rounded-md border-gray-200 hover:border-gray-400 px-4 py-4 flex items-center gap-x-4">
                 <BsTelephoneFill className={"text-gray-600 text-lg"} />
                 <span className="text-gray-400">+2348148799269</span>
                 <BsCopy className={"text-gray-700"} />

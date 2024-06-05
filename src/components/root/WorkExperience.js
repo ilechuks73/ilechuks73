@@ -12,62 +12,66 @@ import {
 export default function WorkExperience() {
   return (
     <div
-      className={"font-roboto max-w-[1000px] mx-4 md:mx-10 mt-20 lg:mx-auto"}
+      className={
+        "font-roboto max-w-[1000px] mx-4 md:mx-10 mt-20 lg:mx-auto overflow-hidden"
+      }
     >
       <div className={"mt-10 w-full"}>
         <h1 className={"text-[20px] font-medium"}>{"Work Experience"}</h1>
       </div>
-      <div className={"mt-4"}>
-        <MuiStepper activeStep={-1} orientation={"vertical"}>
-          {[
-            {
-              company: "JxtGotFunded",
-              startDate: "November, 2023",
-              role: "Full-Stack Engineer",
-            },
-            {
-              company: "Shecluded",
-              startDate: "February, 2023",
-              role: "Head of Engineering",
-            },
-            {
-              company: "Zendwallet",
-              startDate: "October, 2022",
-              role: "Lead Back-End, Cloud & Devops Engineer",
-            },
-            {
-              company: "Child-Prime school",
-              startDate: "July, 2022",
-              role: "Programming and Robotics Instructor",
-            },
-            {
-              company: "Corona secondary school",
-              startDate: "January, 2022",
-              role: "Programming Instructor",
-            },
-            {
-              company: "Park british school",
-              startDate: "June, 2021",
-              role: "Full-Stack Engineer",
-            },
-          ].map((item, index) => {
-            return (
-              <MuiStep key={index}>
-                <MuiStepLabel
-                  optional={
-                    <Fragment>
-                      <p className={"text-black"}>{item.role}</p>
-                      <p className={"text-sm"}>{item.startDate}</p>
-                    </Fragment>
-                  }
-                >
-                  {item.company}
-                </MuiStepLabel>
-              </MuiStep>
-            );
-          })}
-        </MuiStepper>
-      </div>
+      
+        <div className={"mt-4"}>
+          <MuiStepper activeStep={-1} orientation={"vertical"}>
+            {[
+              {
+                company: "JxtGotFunded",
+                startDate: "November, 2023",
+                role: "Full-Stack Engineer",
+              },
+              {
+                company: "Shecluded",
+                startDate: "February, 2023",
+                role: "Head of Engineering",
+              },
+              {
+                company: "Zendwallet",
+                startDate: "October, 2022",
+                role: "Lead Back-End, Cloud & Devops Engineer",
+              },
+              {
+                company: "Child-Prime school",
+                startDate: "July, 2022",
+                role: "Programming and Robotics Instructor",
+              },
+              {
+                company: "Corona secondary school",
+                startDate: "January, 2022",
+                role: "Programming Instructor",
+              },
+              {
+                company: "Park british school",
+                startDate: "June, 2021",
+                role: "Full-Stack Engineer",
+              },
+            ].map((item, index) => {
+              return (
+                <MuiStep key={index}>
+                  <MuiStepLabel
+                    optional={
+                      <Fragment>
+                        <p className={"text-black"}>{item.role}</p>
+                        <p className={"text-sm"}>{item.startDate}</p>
+                      </Fragment>
+                    }
+                  >
+                    {item.company}
+                  </MuiStepLabel>
+                </MuiStep>
+              );
+            })}
+          </MuiStepper>
+        </div>
+       
     </div>
   );
 }
