@@ -27,7 +27,7 @@ export default function Root() {
       <Skills />
       <WorkExperience />
       {/* <Projects /> */}
-      <LatestFromMyBlog />
+      {/*<LatestFromMyBlog />*/}
       <Contact />
       <div className={"h-[300px] w-full bg-none"}></div>
       {/* <ViewSwitch /> */}
